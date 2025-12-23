@@ -9,6 +9,7 @@ env:
   IMAGE_FQDN: ghcr.io/eugenmayer/postgres-operator
   BASE_VERSION: 5.8.6
   BUILD_VERSION: 1
+
 jobs:
   docker:
     runs-on: ubuntu-latest
