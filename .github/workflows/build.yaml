@@ -7,7 +7,7 @@ on:
 
 env:
   IMAGE_FQDN: ghcr.io/eugenmayer/postgres-operator
-  BASE_VERSION: 5.8.6
+  BASE_VERSION: 5.8.6-0
   BUILD_VERSION: 1
 
 jobs:
@@ -38,6 +38,6 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ${{ env.IMAGE_FQDN }}:${{ env.BASE_VERSION }}-${{ env.BUILD_VERSION }}
+            ${{ env.IMAGE_FQDN }}:ubi9-${{ env.BASE_VERSION }}-${{ env.BUILD_VERSION }}
           build-args: |
-            FROM_IMAGE=registry.developers.crunchydata.com/crunchydata/postgres-operator:ubi9-${{ env.BASE_VERSION }}-0
+            FROM_IMAGE=registry.developers.crunchydata.com/crunchydata/postgres-operator:ubi9-${{ env.BASE_VERSION }}
