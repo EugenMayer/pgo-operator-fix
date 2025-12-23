@@ -6,7 +6,7 @@ on:
     - cron: '30 20 * * */2'
 
 env:
-  IMAGE_FQDN: ghcr.io/postgres-operator
+  IMAGE_FQDN: ghcr.io/eugenmayer/postgres-operator
   BASE_VERSION: 5.8.6
   BUILD_VERSION: 1
 jobs:
